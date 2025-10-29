@@ -33,10 +33,13 @@ namespace POC_Home_Page
                     if (teaserItem != null)
                         Context.Item = teaserItem;
                 }
+                else
+                {
                // for all other links load home page
                 var homeItem = GetHomeItem();
                 if (homeItem != null)
                     Context.Item = homeItem;
+                }
             }
            
         }
